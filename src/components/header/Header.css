@@ -1,0 +1,131 @@
+.header {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h2{
+    margin-bottom: 0;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    list-style: none;
+    column-gap: 2.7rem;
+}
+
+.nav-item a{
+    color:  #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.nav-item a:hover {
+    color: #F5870A;
+}
+
+.custom-search {
+    display: flex;
+    align-items: center;
+    padding: 10px 25px;
+    height: 35px;
+    border-radius: 50px;
+    background: #141124;
+}
+
+.custom-search input {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #fff;    
+}
+
+.custom-search span i {
+    cursor: pointer;
+}
+
+.mobile-menu span i{
+    font-size: 1.3rem;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+/* ................ Responsive Design ................ */
+
+@media only screen and (max-width:991px) {
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99;
+        background: #0a071a7e;
+        display: none;
+    }
+
+    .nav-list-wrapper {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 250px;
+        height: 100%;
+        z-index: 100;
+        background: #141124;
+        flex-direction: column;
+        box-shadow: 5px 5px 15px -5px #f5b70a;
+        justify-content: center !important;
+        display: none;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .nav-item a {
+        font-size: 0.9rem;
+    }
+
+    .header {
+        line-height: 40px;
+        padding: 20px 0px;
+        
+    }
+
+    .custom-search {
+        border: 1px solid #c4c4c425;
+        padding: 5px 15px;
+        font-size: 0.9rem;
+        height: 30px;
+        margin-top: 15px;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .logo h2 {
+        font-style: 1.5rem;
+    }
+
+    .active-menu {
+        display: block;
+    }
+
+}
