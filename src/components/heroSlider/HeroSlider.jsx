@@ -28,7 +28,7 @@ const HeroSlider = () => {
                 </div>
 
                 <div className="slider-img w-50">
-                  <img src={item.imgUrl} alt="" height="235" width="245" style={{ paddingLeft: '30px'}}/>
+                <img src={item.imgUrl} alt="" height="450" width="460" style={{ position: 'right' }} />
                 </div>
               </div>
             </div>

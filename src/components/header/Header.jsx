@@ -9,7 +9,7 @@ const NavLinks = [
 },
 {
     display: 'Menu',
-    url: '#',
+    url: '#menu',
 },
 {
     display: 'Locations',
