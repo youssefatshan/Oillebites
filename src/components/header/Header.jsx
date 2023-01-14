@@ -41,13 +41,13 @@ const Header = () => {
                     </h2>
                 </div>
 
-                <div className="nav-menu" onClick={menuToggle} ref={menuRef}>
+                <div className="nav-menu" ref={menuRef}>
                     <div className='nav-list-wrapper d-flex align-items-center gap-5'>
                         <ul className="nav-list">
                             {
                                 NavLinks.map((item,index)=>(
                                     <li className="nav-item" key={index}>
-                                        <a href={item.url}>{item.display}</a>
+                                        <a href={item.url} onClick={menuToggle}>{item.display}</a>
                                     </li>
                                 ))
                             }
@@ -61,13 +61,15 @@ const Header = () => {
                     </div>
                 </div>
 
+                <div>
+                    <span className="cart-icon">
+                        <i class="ri-shopping-basket-line"></i>
+                        <span className="badge">2</span>
+                    </span>
+                </div>
+
                 <div className="mobile-menu">
                      <span><i class="ri-menu-line" onClick={menuToggle}></i></span>
-                 {/*    <li className="nav-item"><a href="">Home</a></li>
-                        <li className="nav-item"><a href="#">Menu</a></li>
-                        <li className="nav-item"><a href="#">Locations</a></li>
-                        <li className="nav-item"><a href="#">Reviews</a></li>
-                        <li className="nav-item"><a href="#">About Us</a></li> */}
                 </div>
             </div>
         </Container>

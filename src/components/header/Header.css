@@ -65,9 +65,31 @@
     display: none;
 }
 
+.cart-icon {
+    position: relative;
+    z-index: 11;
+    width: 40px;
+    height: 30px;
+    border-radius: 5px;
+    background: #FFBA08;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.badge {
+    position: absolute;
+    top: -2px;
+    right: -3px;
+    z-index: 12;
+    color: #141124;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
 /* ................ Responsive Design ................ */
 
-@media only screen and (max-width:991px) {
+@media only screen and (max-width:992px) {
     .nav-menu {
         position: fixed;
         top: 0;
@@ -90,7 +112,7 @@
         flex-direction: column;
         box-shadow: 5px 5px 15px -5px #f5b70a;
         justify-content: center !important;
-        display: none;
+        padding: 0px 20px;
     }
 
     .nav-list {
@@ -104,8 +126,8 @@
 
     .header {
         line-height: 40px;
-        padding: 20px 0px;
-        
+        height: 60px;
+        padding: 10px 0px;       
     }
 
     .custom-search {
@@ -116,12 +138,12 @@
         margin-top: 15px;
     }
 
-    .mobile-menu {
+     .mobile-menu {
         display: block;
     }
 
     .logo h2 {
-        font-style: 1.5rem;
+        font-size: 1.5rem;
     }
 
     .active-menu {
