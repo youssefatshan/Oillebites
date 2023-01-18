@@ -21,15 +21,14 @@ const NavLinks = [
 },
 {
     display: 'About Us',
-    url: '#',
+    url: '#aboutUs',
 },
 ];
 
 const Header = () => {
 
     const menuRef = useRef ();
-
-    const menuToggle =()=> menuRef.current.classList.toggle('active-menu')
+    const menuToggle =()=> menuRef.current.classList.toggle('active-menu');
 
   return (
     <header className='header'>

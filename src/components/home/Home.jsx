@@ -1,7 +1,9 @@
 import React, { Fragment } from 'react';
 import Header from '../header/Header';
 import HeroSlider from '../heroSlider/HeroSlider';
-import Menu from '../menu/Menu'
+import Menu from '../menu/Menu';
+import Locations from '../locations/Locations'
+import AboutUs from '../aboutUs/AboutUs';
 
 const Home = () => {
   return (
@@ -9,6 +11,8 @@ const Home = () => {
         <Header/>
         <HeroSlider/>
         <Menu/>
+        {/* <Locations/> */}
+        <AboutUs></AboutUs>
     </Fragment>
   )
 }

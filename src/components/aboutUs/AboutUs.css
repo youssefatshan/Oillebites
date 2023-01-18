@@ -1,0 +1,12 @@
+.au-container {
+    background-color: #6A040F;
+    border-radius: 15px;
+}
+.au-card {
+    background-color: #03071E;  
+}
+.au-cardTitle {
+    color: rgba(250, 235, 215, 0.959);
+    font-weight: 600;
+
+}

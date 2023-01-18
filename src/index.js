@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import 'leaflet/dist/leaflet.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'remixicon/fonts/remixicon.css'
 import 'slick-carousel/slick/slick.css';
