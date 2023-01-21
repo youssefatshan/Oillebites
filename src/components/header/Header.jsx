@@ -17,7 +17,7 @@ const NavLinks = [
 },
 {
     display: 'Reviews',
-    url: '#',
+    url: '#reviews',
 },
 {
     display: 'About Us',
