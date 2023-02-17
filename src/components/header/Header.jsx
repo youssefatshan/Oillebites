@@ -13,7 +13,7 @@ const NavLinks = [
 },
 {
     display: 'Locations',
-    url: '#',
+    url: '#locations',
 },
 {
     display: 'Reviews',

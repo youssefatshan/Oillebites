@@ -15,6 +15,8 @@ import dessert04 from "../images/dessert3.png";
 
 import Product01 from '../images/product01.jpg'
 import Product02 from '../images/product02.jpg'
+import Product03 from '../images/product03.jpg'
+import Product04 from '../images/product04.jpg'
 
 export const menuItems = [
   {
@@ -36,13 +38,13 @@ export const menuItems = [
     name: 'Hotdog',
     price: '$4.99',
     rating: 3,
-    image: 'https://via.placeholder.com/150',
+    image: Product03,
   },
   {
     id: 4,
     name: 'Shake',
     price: '$3.99',
     rating: 2,
-    image: 'https://via.placeholder.com/150',
+    image: Product04,
   },
 ];

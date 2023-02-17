@@ -1,17 +1,13 @@
 // import logo from './logo.svg';
 import './App.css';
 import Home from './components/home/Home.jsx';
-// import Header from './components/header/Header.jsx';
-// import HeroSlider from './components/heroSlider/HeroSlider.jsx';
-import { Component } from 'react';
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 
 function App() {
   return (
     
     <div className="App">
-      <div>
         <Home/>
-      </div>
     </div>
   );
 }

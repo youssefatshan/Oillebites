@@ -44,7 +44,7 @@ const Testimonials = (props) => {
   return (
     <div className="testimonials-section d-flex" id='reviews'>
       <div className="testimonials-title">
-        <h2 className="testimonials-title">What our customers are Saying</h2>
+        <h1 className="testimonials-title">What our customers are Saying</h1>
       </div>
       <div className="testimonials-content-2 d-flex">
         <div className="testimonials-container">

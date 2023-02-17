@@ -1,5 +1,35 @@
-.container{
-    background-color: #f5f5f5;
-    padding: 20px;
-    border-radius: 20px;
+ .Locations {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  grid-column-gap: 20px;
+  margin-top: 100px;
+}
+
+h1 {
+  grid-row: 1;
+  grid-column: 1 / -1;
+  margin-top: 58px;
+  margin-bottom: 60px;
+}
+
+.leaflet-container {
+  grid-row: 2;
+  grid-column: 1;
+  background-color: #f5f5f5;
+  padding: 20px;
+  margin-left: 155px;
+  border-radius: 20px;
+  width: 60vh;
+  height: 60vh;
+}
+
+.locations-text {
+  grid-row: 2;
+  grid-column: 2;
+  color: #fff;
+  padding-right: 35%;
+  font-size: 18px;
+  line-height: 1.7;
+  text-align: justify;
 }

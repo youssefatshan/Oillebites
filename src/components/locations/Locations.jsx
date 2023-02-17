@@ -1,81 +1,31 @@
-import { MapContainer , TileLayer, Marker } from 'react-leaflet';
+import React from "react";
+// Import React Leaflet components:
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import './Locations.css'
+
+const position = [25.222681, 55.281985]
 
 const Locations = () => {
-    const location = [25.2048, 55.2708];
     return (
-        <div className="locations">
-            <MapContainer  center={location} zoom={13}>
-                <TileLayer
-                    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                    attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-                />
-                <Marker position={location} />
-            </MapContainer >
+        <div className="Locations" id="locations">
+          <h1 className="text-center">This is Our Locations</h1>
+          <div className="locations-text">
+          Welcome to the OilleBites locations page, where you'll find information on all of our fast food chain locations in the vibrant city of Dubai. As one of the top tourist and business destinations in the Middle East, Dubai offers a unique blend of traditional Arabic culture and futuristic skyscrapers, making it the perfect place to indulge in your favorite fast food.
+At OilleBites, we have a wide variety of locations throughout Dubai to choose from, all of which offer delicious fast food options and friendly service. Whether you're looking for a quick bite on the go or a sit-down meal, we have a location that will suit your needs.
+
+          </div>
+          <MapContainer center={position} zoom={17} scrollWheelZoom={false}>
+            <TileLayer
+              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+            <Marker position={position}>
+              <Popup>
+                OllieBites <br /> Dubai.
+              </Popup>
+            </Marker>
+          </MapContainer>
         </div>
     );
 };
 export default Locations;
- 
-// //how to import google map in react?
-// import React from 'react';
-// import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
-
-// const GOOGLE_MAPS_JS_API_KEY='AIzaSyB6whuBhj_notrealkey';
-
-
-// class GoogleMap extends React.Component {
-// constructor() {
-
-//     this.state = {
-//         zoom: 13
-//     }
-
-//     this.onMapClicked = this.onMapClicked.bind(this);
-//     this.handleMapMount = this.handleMapMount.bind(this);
-// }
-
-// onMapClicked (props) {
-//     if (this.state.showingInfoWindow) {
-//         this.setState({
-//             showingInfoWindow: false,
-//             activeMarker: null
-//         })
-//     }
-// }
-
-// handleMapMount(mapProps, map) {
-//     this.map = map;
-
-//     //log map bounds
-//     console.log(this.map.getBounds());
-// }
-
-// render() {
-//     const {google} = this.props;
-
-//     if (!this.props.loaded) {
-//         return <div>Loading...</div>
-//     }
-
-//     return (
-//         <Map className='google-map'
-//             google={google}
-//             onClick={this.onMapClicked}
-//             zoom={this.state.zoom}
-//             onReady={this.handleMapMount}
-//             >
-//         </Map>
-//         );
-//     }
-// }
-
-// export default GoogleApiWrapper({
-// apiKey: (GOOGLE_MAPS_JS_API_KEY)
-// })(GoogleMap);
-
-
-
-
-// //Source: https://stackoverflow.com/questions/46152806
-
-
