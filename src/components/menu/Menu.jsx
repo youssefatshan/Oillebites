@@ -19,7 +19,7 @@ const Menu = () => {
     <div className='menu-section' id="menu">
         <div className='menu-text'>
         <h1>Menu</h1>
-            <Card className='au-card au-container'>
+            <Card className='au-card'>
             <CardBody className='au-cardText'>
               <CardText>
                 Welcome to the OilleBites menu page, where you'll find information on the delicious options offered by some of the best fast food chains around.
