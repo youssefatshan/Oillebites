@@ -3,3 +3,14 @@
     transition: transform 0.3s ease-in-out;
     box-shadow: 5px 5px 10px -5px #f5b70a;
   }
+
+  h1 {
+    text-align: center;
+    padding-top: 60px;
+  }
+
+  .menu-text {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 40px;
+  }

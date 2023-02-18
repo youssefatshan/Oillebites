@@ -1,4 +1,4 @@
- .Locations {
+.Locations {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto 1fr;
@@ -9,7 +9,6 @@
 h1 {
   grid-row: 1;
   grid-column: 1 / -1;
-  margin-top: 58px;
   margin-bottom: 60px;
 }
 
@@ -32,4 +31,43 @@ h1 {
   font-size: 18px;
   line-height: 1.7;
   text-align: justify;
+}
+
+/* Use a media query to change the styles for devices with a max-width of 768px (tablets) */
+@media screen and (max-width: 768px) {
+  
+  .Locations {
+    display: block;
+  }
+  
+  .leaflet-container {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  
+  .locations-text {
+    padding-right: 18px;
+    padding-left: 18px;
+    padding-bottom: 14px;
+  }
+
+   /* Add a media query for smaller screens */
+   @media screen and (max-width: 480px) {
+     .Locations {
+       display: block;
+     }
+     
+     .leaflet-container {
+       width: 100%;
+       margin-left: 0;
+       margin-bottom: 20px;
+     }
+     
+     .locations-text {
+      padding-right: 18px;
+      padding-left: 18px;
+      padding-bottom: 14px;
+     }
+   }
 }

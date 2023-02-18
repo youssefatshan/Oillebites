@@ -16,7 +16,20 @@ const Menu = () => {
     }, [menuEl]);
 
   return (
-    <Container id="menu" ref={menuEl}>
+    <div className='menu-section' id="menu">
+        <div className='menu-text'>
+        <h1>Menu</h1>
+            <Card className='au-card au-container'>
+            <CardBody className='au-cardText'>
+              <CardText>
+                Welcome to the OilleBites menu page, where you'll find information on the delicious options offered by some of the best fast food chains around.
+                We have a wide variety of menu items to choose from, including classic burgers, crispy fried chicken, refreshing salads, and more. Our menus are updated regularly to ensure you always have access to the latest offerings.
+                <br/><strong>Thank you for visiting OilleBites menu page, where you can explore the delicious fast food options at your fingertips. Happy browsing and bon appetit!</strong>
+              </CardText>
+            </CardBody>
+          </Card>
+        </div>
+        <Container>
       <Row>
         {menuItems.map((item) => (
         <Col sm="3" className="my-3">
@@ -54,6 +67,7 @@ const Menu = () => {
         ))}
       </Row>
     </Container>
+    </div>
   );
 };
 
